@@ -1,5 +1,9 @@
-# awstestapp
+# awsrobomakertestapp
+This app create a differential drive robot and simulate a robot to create a map. The differntial drive robot code was mostly from https://github.com/NRottmann/ROS_Gazebo_Tutorial
+
 Make sure you change  s3 bucket and IAM role in simualtion job configuration
+
+
 
 #  Download Source
 ```
