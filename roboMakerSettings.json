@@ -1,0 +1,113 @@
+{
+  "runConfigurations": [
+    {
+      "id": "HelloWorld_Cfg01",
+      "name": "Diff Robot",
+      "type": "colcon build",
+      "cfg": {
+        "workingDir": "/testApp/robot_ws",
+        "cmdArgs": ""
+      }
+    },
+    {
+      "id": "HelloWorld_Cfg02",
+      "name": "Diff Robot",
+      "type": "colcon bundle",
+      "cfg": {
+        "workingDir": "/testApp/robot_ws",
+        "cmdArgs": ""
+      }
+    },
+    {
+      "id": "HelloWorld_Cfg03",
+      "name": "Diff Robot Simulation",
+      "type": "colcon build",
+      "cfg": {
+        "workingDir": "/testApp/simulation_ws",
+        "cmdArgs": ""
+      }
+    },
+    {
+      "id": "HelloWorld_Cfg04",
+      "name": "Diff Robot Simulation",
+      "type": "colcon bundle",
+      "cfg": {
+        "workingDir": "/testApp/simulation_ws",
+        "cmdArgs": ""
+      }
+    },
+    {
+      "id": "HelloWorld_SimulationJob1",
+      "name": "DiffWorld",
+      "type": "simulation",
+      "cfg": {
+        "robotApp": {
+          "name": "RobotApp",
+          "sourceBundleFile": "/testApp/robot_ws/bundle/output.tar",
+          "s3Bucket": "ece3082libai",
+          "architecture": "X86_64",
+          "launchConfig": {
+            "packageName": "robot_mapping",
+            "launchFile": "map.launch",
+            "environmentVariables": {}
+          },
+          "robotSoftwareSuite": {
+            "name": "ROS",
+            "version": "Melodic"
+          }
+        },
+        "simulationApp": {
+          "name": "Simulation",
+          "sourceBundleFile": "/testApp/simulation_ws/bundle/output.tar",
+          "architecture": "X86_64",
+          "s3Bucket": "ece3082libai",
+          "launchConfig": {
+            "packageName": "simulation_gazebo",
+            "launchFile": "combine.launch",
+            "environmentVariables": {}
+          },
+          "simulationSoftwareSuite": {
+            "name": "Gazebo",
+            "version": "9"
+          },
+          "renderingEngine": {
+            "name": "OGRE",
+            "version": "1.x"
+          },
+          "robotSoftwareSuite": {
+            "name": "ROS",
+            "version": "Melodic"
+          }
+        },
+        "simulation": {
+          "maxJobDurationInSeconds": 1800,
+          "failureBehavior": "Fail",
+          "iamRole": "arn:aws:iam::989152522756:role/robomaker_students",
+          "outputLocation": "ece3082libai",
+          "vpcConfig": {
+            "subnets": [
+              "subnet-1052115d",
+              "subnet-29bd0176"
+            ],
+            "securityGroups": [
+              "sg-cf9812ff"
+            ],
+            "assignPublicIp": true
+          },
+          "tags": {}
+        }
+      }
+    },
+    {
+      "id": "HelloWorld_wf1",
+      "type": "workflow",
+      "name": "HelloWorld - Build and Bundle All",
+      "runCfgIds": [
+        "HelloWorld_Cfg01",
+        "HelloWorld_Cfg02",
+        "HelloWorld_Cfg03",
+        "HelloWorld_Cfg04"
+      ]
+    }
+  ]
+}

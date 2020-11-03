@@ -1,0 +1,9 @@
+<launch>
+
+<include file="$(find simulation_gazebo)/launch/world.launch"/>
+<include file="$(find simulation_gazebo)/launch/robot.launch"/>
+    
+<node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher" />
+    
+    
+</launch>
