@@ -1,4 +1,5 @@
 # awstestapp
+Make sure you change  s3 bucket and IAM role in simualtion job configuration
 
 #  Download Source
 ```
