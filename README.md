@@ -45,3 +45,8 @@ roslaunch mapping_robot map.launch
 ```
  rosrun teleop_twist_keyboard teleop_twist_keyboard.py
 ```
+
+## Navigation
+```
+sudo apt-get install ros-melodic-amcl ros-melodic-move-base ros-melodic-global-planner ros-melodic-teb-local-planner -y
+```
