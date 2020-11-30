@@ -5,5 +5,7 @@
   <!-- Spawn the robot after we built the urdf files -->
   <node name="diff_drive_spawn" pkg="gazebo_ros" type="spawn_model" output="screen"
    args="-urdf -param robot_description -model diff_drive" />
+     <node pkg="robot_state_publisher" type="robot_state_publisher" name="robot_state_publisher" output="screen"/>
+
    
    </launch>
