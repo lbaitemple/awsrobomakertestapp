@@ -17,6 +17,8 @@ find_package(catkin REQUIRED COMPONENTS
   nav_msgs
   robot_state_publisher
   sensor_msgs
+  map_server
+  amcl
   teleop_twist_keyboard
 )
 
@@ -212,6 +214,6 @@ include_directories(
 ## Add folders to be run by python nosetests
 # catkin_add_nosetests(test)
 
-install(DIRECTORY launch 
+install(DIRECTORY launch maps worlds
   DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}
 )

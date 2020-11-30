@@ -2,7 +2,7 @@
 
 <param name="use_sim_time" value="true"/>
 
- <param name="robot_description" command="$(find xacro)/xacro --inorder '$(find robots)/models/diff_drive/diff_drive.xacro'"/>
+ <param name="robot_description" command="$(find xacro)/xacro --inorder '$(find robots)/urdf/diff_drive/diff_drive.xacro'"/>
  <node pkg="gazebo_ros" type="spawn_model" name="spawn_urdf" 
         args="-urdf -param robot_description -model diff_drive"/>
         
