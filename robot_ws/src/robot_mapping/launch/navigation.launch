@@ -14,6 +14,5 @@
 	<rosparam file="$(find robot_mapping)/launch/config/planner_teb.yaml" command="load" />
         <param name="base_local_planner" value="teb_local_planner/TebLocalPlannerROS"/>
   </node>
- <node pkg="robot_state_publisher" type="robot_state_publisher" name="robot_state_publisher" output="screen"/>
 
 </launch>
