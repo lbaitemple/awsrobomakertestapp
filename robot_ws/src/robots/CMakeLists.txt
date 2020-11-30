@@ -211,6 +211,6 @@ include_directories(
 ## Add folders to be run by python nosetests
 # catkin_add_nosetests(test)
 
-install(DIRECTORY config models
+install(DIRECTORY config urdf
   DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}
 )
