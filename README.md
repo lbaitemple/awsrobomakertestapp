@@ -9,10 +9,14 @@ Make sure you change  s3 bucket and IAM role in simualtion job configuration
 ```
 git clone https://github.com/lbaitemple/awsrobomakertestapp
 ```
-
+### install vcs
+```
+sudo apt install python3-vcstools -y
+```
 ### Robot
 ```
 cd ~/environment/awsrobotmakertestapp/robot_ws
+vcs import < .rosinstall
 rosdep install --from-paths src --ignore-src -r -y
 colcon build
 colcon bundle
