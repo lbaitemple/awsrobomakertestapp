@@ -48,7 +48,7 @@
           "architecture": "X86_64",
           "launchConfig": {
             "packageName": "robot_mapping",
-            "launchFile": "map.launch",
+            "launchFile": "navigation.launch",
             "environmentVariables": {}
           },
           "robotSoftwareSuite": {
