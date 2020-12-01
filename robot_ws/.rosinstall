@@ -1,1 +1,2 @@
 - git: {local-name: src/deps/navigation, uri: "https://github.com/ros-planning/navigation", version: "ros1"}
+- git: {local-name: src/deps/local_planner, uri: "https://github.com/rst-tu-dortmund/teb_local_planner", version: "ros1"}
