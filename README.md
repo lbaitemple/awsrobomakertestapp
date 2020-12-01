@@ -11,7 +11,7 @@ git clone https://github.com/lbaitemple/awsrobomakertestapp
 ```
 ### install vcs
 ```
-sudo apt install python3-vcstools -y
+sudo apt install python3-vcstool -y
 ```
 ### Robot
 ```
