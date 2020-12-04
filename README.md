@@ -38,7 +38,7 @@ roslaunch simulation_gazebo combine.launch
 ```
 cd ~/environment/awsrobotmakertestapp/robot_ws
 source ./install/local_setup.sh
-roslaunch mapping_robot map.launch
+roslaunch robot_mapping map.launch
 ```
 
 ### Terminal teleop control
