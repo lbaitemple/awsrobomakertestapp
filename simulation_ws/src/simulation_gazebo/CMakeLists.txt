@@ -12,6 +12,7 @@ find_package(catkin REQUIRED COMPONENTS
   gazebo_ros
   gazebo_ros_control
   joint_state_controller
+  joint_state_publisher
   roscpp
   rospy
   std_msgs
