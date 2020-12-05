@@ -30,7 +30,7 @@ colcon build
 ```
 cd ~/environment/awsrobotmakertestapp/simulation_ws
 source ./install/local_setup.sh
-roslaunch simulation_gazebo combine.launch
+roslaunch simulation_gazebo view_combine.launch
 ```
 
 ### Running Robot Application 
