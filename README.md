@@ -27,6 +27,12 @@ colcon build
 
 ### Running Simulation Application 
 
+#### if you are running gazebo in virtual machine, you will need to include the following line in .bashrc
+
+```
+echo 'export export SVGA_VGPU10=0' >> ~/.bashrc 
+```
+
 ```
 cd ~/environment/awsrobotmakertestapp/simulation_ws
 source ./install/local_setup.sh
