@@ -10,7 +10,7 @@ Make sure you change  s3 bucket and IAM role in simualtion job configuration
 git clone -b navigation  https://github.com/lbaitemple/awsrobomakertestapp
 ```
 
-```
+
 ### Robot
 ```
 cd ~/environment/awsrobomakertestapp/robot_ws
@@ -45,7 +45,7 @@ roslaunch robot_mapping navigation.launch
 
 ### Terminal teleop control
 ```
- rosrun teleop_twist_keyboard teleop_twist_keyboard.py
+rosrun teleop_twist_keyboard teleop_twist_keyboard.py
 ```
 
 ## Navigation
