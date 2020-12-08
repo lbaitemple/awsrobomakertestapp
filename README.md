@@ -13,7 +13,7 @@ git clone -b navigation  https://github.com/lbaitemple/awsrobomakertestapp
 ```
 ### Robot
 ```
-cd ~/environment/awsrobotmakertestapp/robot_ws
+cd ~/environment/awsrobomakertestapp/robot_ws
 rosws udpate
 rosdep install --from-paths src --ignore-src -r -y
 colcon build
@@ -22,7 +22,7 @@ colcon bundle
 
 ### Simulation
 ```
-cd ~/environment/awsrobotmakertestapp/simulation_ws
+cd ~/environment/awsrobomakertestapp/simulation_ws
 rosdep install --from-paths src --ignore-src -r -y
 colcon build
 ```
