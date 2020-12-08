@@ -7,7 +7,7 @@ Make sure you change  s3 bucket and IAM role in simualtion job configuration
 
 #  Download Source
 ```
-git clone https://github.com/lbaitemple/awsrobomakertestapp
+git clone -b navigation  https://github.com/lbaitemple/awsrobomakertestapp
 ```
 ### install vcs
 ```
