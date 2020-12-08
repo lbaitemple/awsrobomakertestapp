@@ -25,6 +25,7 @@ colcon bundle
 cd ~/environment/awsrobomakertestapp/simulation_ws
 rosdep install --from-paths src --ignore-src -r -y
 colcon build
+colcon bundle
 ```
 
 ### Running Simulation Application 
