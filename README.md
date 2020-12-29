@@ -7,6 +7,7 @@ Make sure you change  s3 bucket and IAM role in simualtion job configuration
 
 #  Download Source
 ```
+sudo apt install python3-vcstools
 git clone -b navigation  https://github.com/lbaitemple/awsrobomakertestapp
 ```
 
@@ -23,6 +24,7 @@ colcon bundle
 ### Simulation
 ```
 cd ~/environment/awsrobomakertestapp/simulation_ws
+rosws update
 rosdep install --from-paths src --ignore-src -r -y
 colcon build
 colcon bundle
