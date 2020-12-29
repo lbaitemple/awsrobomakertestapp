@@ -12,14 +12,6 @@ git clone -b navigation  https://github.com/lbaitemple/awsrobomakertestapp
 ```
 
 
-### Robot
-```
-cd ~/environment/awsrobomakertestapp/robot_ws
-rosws udpate
-rosdep install --from-paths src --ignore-src -r -y
-colcon build
-colcon bundle
-```
 
 ### Simulation
 ```
@@ -36,6 +28,15 @@ colcon bundle
 cd ~/environment/awsrobotmakertestapp/simulation_ws
 source ./install/local_setup.sh
 roslaunch simulation_gazebo combine.launch
+```
+
+### Robot
+```
+cd ~/environment/awsrobomakertestapp/robot_ws
+rosws udpate
+rosdep install --from-paths src --ignore-src -r -y
+colcon build
+colcon bundle
 ```
 
 ### Running Robot Application 
