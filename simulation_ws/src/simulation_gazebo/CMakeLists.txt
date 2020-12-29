@@ -11,12 +11,20 @@ find_package(catkin REQUIRED COMPONENTS
   gazebo_plugins
   gazebo_ros
   gazebo_ros_control
-  joint_state_controller
   roscpp
   rospy
   std_msgs
-  teleop_twist_keyboard
   xacro
+  geometry_msgs
+  gmapping
+  joint_state_controller
+  joint_state_publisher
+  nav_msgs
+  robot_state_publisher
+  sensor_msgs
+  map_server
+  amcl
+  teleop_twist_keyboard
 )
 
 ## System dependencies are found with CMake's conventions
@@ -210,6 +218,6 @@ include_directories(
 
 ## Add folders to be run by python nosetests
 # catkin_add_nosetests(test)
-install(DIRECTORY launch worlds
+install(DIRECTORY launch worlds maps
   DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}
 )
