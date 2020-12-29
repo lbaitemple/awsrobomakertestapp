@@ -32,7 +32,8 @@ roslaunch simulation_gazebo combine.launch
 
 ## Run configuration
 1. try to switch roboconfig in run configuration
-1. in simulation configuration, modify s3 buket, role ARN, and VPC subnets
+1. in simulation configuration, modify s3 buket, role ARN, and VPC subnets (use available zones a,b,c) & security group id
+1. after colcon build, colcon bundle, you can lauch simulation in run configuration
 
 ### Terminal teleop control
 ```
