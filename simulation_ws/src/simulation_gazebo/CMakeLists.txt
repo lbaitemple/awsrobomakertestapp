@@ -13,6 +13,10 @@ find_package(catkin REQUIRED COMPONENTS
   gazebo_ros_control
   joint_state_controller
   joint_state_publisher
+  gmapping
+  nav_msgs
+  robot_state_publisher
+  sensor_msgs
   roscpp
   rospy
   std_msgs

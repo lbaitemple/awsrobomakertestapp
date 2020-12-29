@@ -52,10 +52,14 @@
   <build_depend>gazebo_plugins</build_depend>
   <build_depend>gazebo_ros</build_depend>
   <build_depend>gazebo_ros_control</build_depend>
+  <build_depend>gmapping</build_depend>
   <build_depend>joint_state_controller</build_depend>
   <build_depend>joint_state_publisher</build_depend>
+  <build_depend>nav_msgs</build_depend>
+  <build_depend>robot_state_publisher</build_depend>
   <build_depend>roscpp</build_depend>
   <build_depend>rospy</build_depend>
+  <build_depend>sensor_msgs</build_depend>
   <build_depend>std_msgs</build_depend>
   <build_depend>teleop_twist_keyboard</build_depend>
   <build_depend>xacro</build_depend>
@@ -65,6 +69,9 @@
   <build_export_depend>joint_state_controller</build_export_depend>
   <build_export_depend>joint_state_publisher</build_export_depend>
   <build_export_depend>roscpp</build_export_depend>
+   <build_export_depend>nav_msgs</build_export_depend>
+  <build_export_depend>robot_state_publisher</build_export_depend>
+  <build_export_depend>sensor_msgs</build_export_depend>
   <build_export_depend>rospy</build_export_depend>
   <build_export_depend>std_msgs</build_export_depend>
   <build_export_depend>teleop_twist_keyboard</build_export_depend>
@@ -77,6 +84,10 @@
   <exec_depend>roscpp</exec_depend>
   <exec_depend>rospy</exec_depend>
   <exec_depend>std_msgs</exec_depend>
+   <exec_depend>gmapping</exec_depend>
+  <exec_depend>nav_msgs</exec_depend>
+  <exec_depend>robot_state_publisher</exec_depend>
+  <exec_depend>sensor_msgs</exec_depend>
   <exec_depend>teleop_twist_keyboard</exec_depend>
   <exec_depend>xacro</exec_depend>
 
