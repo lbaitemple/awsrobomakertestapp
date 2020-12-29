@@ -11,7 +11,7 @@ sudo apt install python3-vcstools
 git clone -b navigation  https://github.com/lbaitemple/awsrobomakertestapp
 ```
 
-
+## terminal commands
 
 ### Simulation
 ```
@@ -30,6 +30,16 @@ source ./install/local_setup.sh
 roslaunch simulation_gazebo combine.launch
 ```
 
+## Run configuration
+1. try to switch roboconfig in run configuration
+1. in simulation configuration, modify s3 buket, role ARN, and VPC subnets
+
+### Terminal teleop control
+```
+rosrun teleop_twist_keyboard teleop_twist_keyboard.py
+```
+
+
 ### Robot
 ```
 cd ~/environment/awsrobomakertestapp/robot_ws
@@ -47,10 +57,7 @@ source ./install/local_setup.sh
 roslaunch robot_mapping navigation.launch
 ```
 
-### Terminal teleop control
-```
-rosrun teleop_twist_keyboard teleop_twist_keyboard.py
-```
+
 
 ## Navigation
 ```
