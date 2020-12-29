@@ -2,24 +2,6 @@
   "runConfigurations": [
     {
       "id": "HelloWorld_Cfg01",
-      "name": "Diff Robot",
-      "type": "colcon build",
-      "cfg": {
-        "workingDir": "/awsrobomakertestapp/robot_ws",
-        "cmdArgs": ""
-      }
-    },
-    {
-      "id": "HelloWorld_Cfg02",
-      "name": "Diff Robot",
-      "type": "colcon bundle",
-      "cfg": {
-        "workingDir": "/awsrobomakertestapp/robot_ws",
-        "cmdArgs": ""
-      }
-    },
-    {
-      "id": "HelloWorld_Cfg03",
       "name": "Diff Robot Simulation",
       "type": "colcon build",
       "cfg": {
@@ -28,7 +10,7 @@
       }
     },
     {
-      "id": "HelloWorld_Cfg04",
+      "id": "HelloWorld_Cfg02",
       "name": "Diff Robot Simulation",
       "type": "colcon bundle",
       "cfg": {
@@ -41,26 +23,11 @@
       "name": "DiffWorld",
       "type": "simulation",
       "cfg": {
-        "robotApp": {
-          "name": "RobotApp",
-          "sourceBundleFile": "/awsrobomakertestapp/robot_ws/bundle/output.tar",
-          "s3Bucket": "ece3082libai",
-          "architecture": "X86_64",
-          "launchConfig": {
-            "packageName": "robot_mapping",
-            "launchFile": "map.launch",
-            "environmentVariables": {}
-          },
-          "robotSoftwareSuite": {
-            "name": "ROS",
-            "version": "Melodic"
-          }
-        },
         "simulationApp": {
           "name": "Simulation",
           "sourceBundleFile": "/awsrobomakertestapp/simulation_ws/bundle/output.tar",
           "architecture": "X86_64",
-          "s3Bucket": "ece3082libai",
+          "s3Bucket": "ece3082robomakerlibai",
           "launchConfig": {
             "packageName": "simulation_gazebo",
             "launchFile": "combine.launch",
@@ -82,15 +49,16 @@
         "simulation": {
           "maxJobDurationInSeconds": 1800,
           "failureBehavior": "Fail",
-          "iamRole": "arn:aws:iam::989152522756:role/robomaker_students",
-          "outputLocation": "ece3082libai",
+          "iamRole": "arn:aws:iam::954109310517:role/robomaker_students",
+          "outputLocation": "ece3082robomakerlibai",
           "vpcConfig": {
             "subnets": [
-              "subnet-1052115d",
-              "subnet-29bd0176"
+              "subnet-f38d0dac",
+              "subnet-152baf73",
+              "subnet-6c51d34d"
             ],
             "securityGroups": [
-              "sg-cf9812ff"
+              "sg-41017774"
             ],
             "assignPublicIp": true
           },
@@ -104,9 +72,7 @@
       "name": "HelloWorld - Build and Bundle All",
       "runCfgIds": [
         "HelloWorld_Cfg01",
-        "HelloWorld_Cfg02",
-        "HelloWorld_Cfg03",
-        "HelloWorld_Cfg04"
+        "HelloWorld_Cfg02"
       ]
     }
   ]
